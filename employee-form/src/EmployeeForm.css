@@ -1,0 +1,68 @@
+background-image: url('/logo.jpg');
+
+body {
+    background-image: url('/logo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.employee-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.employee-form label {
+    margin-bottom: 0.5rem;
+}
+
+.employee-form input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+}
+
+.employee-form button {
+    padding: 0.5rem 1rem;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    align-items: center;
+}
+.fancy-title {
+    font-size: 3rem;
+    font-family: 'Cursive', 'Brush Script MT', 'Lucida Handwriting', sans-serif;
+    color: #4B0082;
+    text-shadow: 2px 2px 5px rgba(75, 0, 130, 0.5);
+    margin-bottom: 2rem;
+}
+@keyframes shimmer {
+    0% {
+        color: #4B0082;
+        text-shadow: 0 0 5px #4B0082, 0 0 10px #4B0082;
+    }
+    50% {
+        color: #9400D3;
+        text-shadow: 0 0 10px #9400D3, 0 0 20px #9400D3;
+    }
+    100% {
+        color: #4B0082;
+        text-shadow: 0 0 5px #4B0082, 0 0 10px #4B0082;
+    }
+}
+
+.fancy-title {
+    font-size: 10rem;
+    font-family: 'Cursive', 'Brush Script MT', 'Lucida Handwriting', sans-serif;
+    animation: shimmer 2s infinite ease-in-out;
+    margin-bottom: 2rem;
+    text-align: center;
+}
